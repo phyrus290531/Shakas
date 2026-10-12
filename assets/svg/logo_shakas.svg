@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <!-- Grupo principal -->
+  <g>
+    <!-- Círculos decorativos exteriores -->
+    <circle cx="200" cy="200" r="145" fill="none" stroke="#FFFFFF" stroke-width="2.5" stroke-dasharray="6 4" opacity="0.6" />
+    <circle cx="200" cy="200" r="140" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.8" />
+    <circle cx="200" cy="200" r="105" fill="none" stroke="#FFFFFF" stroke-width="3" />
+
+    <!-- Texto Superior: LOS SHAKAS -->
+    <text x="200" y="85" font-family="sans-serif" font-size="34" font-weight="900" fill="#FFFFFF" text-anchor="middle" letter-spacing="4">LOS SHAKAS</text>
+
+    <!-- Texto Inferior: Puerto Peñasco, Son. -->
+    <text x="200" y="325" font-family="serif" font-size="16" font-weight="bold" font-style="italic" fill="#FFFFFF" text-anchor="middle" letter-spacing="2">Puerto Peñasco, Son.</text>
+
+    <!-- Olas a la izquierda -->
+    <path d="M 115,225 C 105,215 110,195 125,195 C 135,195 140,205 135,215 C 132,220 125,225 115,225 Z" fill="none" stroke="#FFFFFF" stroke-width="3"/>
+    <path d="M 125,210 C 135,185 155,185 160,205" fill="none" stroke="#FFFFFF" stroke-width="2.5"/>
+    <path d="M 110,235 C 130,230 145,235 155,245" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+    <!-- Cactus a la derecha -->
+    <g stroke="#FFFFFF" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round">
+      <line x1="285" y1="240" x2="285" y2="185"/>
+      <path d="M 285,215 L 273,215 L 273,195"/>
+      <path d="M 285,205 L 297,205 L 297,190"/>
+    </g>
+
+    <!-- Silueta de montañas al fondo -->
+    <path d="M 155,230 L 180,205 L 205,225 L 235,195 L 270,230" fill="none" stroke="#FFFFFF" stroke-width="2" opacity="0.7"/>
+
+    <!-- Mano Shaka en el centro -->
+    <g transform="translate(160, 140)">
+      <!-- Pulsera con bandera de México (Verde, Blanco, Rojo) -->
+      <rect x="25" y="102" width="10" height="12" fill="#006847" rx="1"/>
+      <rect x="35" y="102" width="10" height="12" fill="#FFFFFF" rx="1"/>
+      <rect x="45" y="102" width="10" height="12" fill="#CE1126" rx="1"/>
+      <!-- Nudos de la pulsera -->
+      <path d="M 28,114 Q 24,125 18,128" stroke="#006847" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <path d="M 52,114 Q 56,125 62,128" stroke="#CE1126" stroke-width="3" fill="none" stroke-linecap="round"/>
+
+      <!-- Palma y dedos plegados -->
+      <path d="M 24,102 
+               C 22,88 24,65 30,55 
+               C 33,50 45,50 50,55 
+               C 56,50 65,55 68,62 
+               C 70,70 70,88 66,102 Z" 
+            fill="#121212" stroke="#FFFFFF" stroke-width="3.5" stroke-linejoin="round"/>
+
+      <line x1="42" y1="56" x2="42" y2="78" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+      <line x1="55" y1="58" x2="55" y2="78" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+
+      <!-- Pulgar extendido hacia la izquierda -->
+      <path d="M 26,75 
+               C 15,70 -5,55 -15,40 
+               C -20,32 -10,25 -2,32 
+               C 12,42 22,58 30,68" 
+            fill="#121212" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Meñique extendido hacia la derecha -->
+      <path d="M 64,72 
+               C 75,60 90,38 96,20 
+               C 99,10 110,14 107,24 
+               C 101,48 85,75 66,88" 
+            fill="#121212" stroke="#FFFFFF" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+      <!-- Sombras y detalles de la mano -->
+      <path d="M 33,85 C 40,88 55,88 62,85" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.8"/>
+      <path d="M 35,92 C 42,95 53,95 60,92" stroke="#FFFFFF" stroke-width="2" fill="none" opacity="0.8"/>
+    </g>
+  </g>
+</svg>

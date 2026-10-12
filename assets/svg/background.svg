@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGlow" cx="45%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#2a201a" />
+      <stop offset="50%" stop-color="#141110" />
+      <stop offset="100%" stop-color="#080707" />
+    </radialGradient>
+    <pattern id="checker" width="60" height="60" patternUnits="userSpaceOnUse" patternTransform="rotate(25)">
+      <rect width="30" height="30" fill="#181818" />
+      <rect x="30" width="30" height="30" fill="#2d2d2d" />
+      <rect y="30" width="30" height="30" fill="#2d2d2d" />
+      <rect x="30" y="30" width="30" height="30" fill="#181818" />
+    </pattern>
+    <radialGradient id="foodGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#8a4f1d" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#4d280b" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="40%" stop-color="#000000" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.85"/>
+    </radialGradient>
+  </defs>
+  <rect width="1920" height="1080" fill="url(#bgGlow)" />
+  <rect x="-200" y="200" width="1200" height="900" fill="url(#checker)" opacity="0.35" transform="rotate(-15 400 650)" />
+  <circle cx="550" cy="580" r="420" fill="url(#foodGlow)" />
+  <circle cx="550" cy="580" r="340" fill="#1f1813" opacity="0.45" stroke="#3d2f25" stroke-width="4"/>
+  <ellipse cx="1400" cy="520" rx="500" ry="380" fill="#422e1a" opacity="0.2" />
+  <rect width="1920" height="1080" fill="url(#vignette)" />
+</svg>
