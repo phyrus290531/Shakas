@@ -16,6 +16,8 @@ module.exports = {
       },
       fontFamily: {
         medieval: ['MedievalSharp'],
+        rocker: ['NewRocker'],
+        cookie: ['Cookie'],
       },
     },
   },

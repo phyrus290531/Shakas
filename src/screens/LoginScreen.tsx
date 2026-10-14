@@ -11,13 +11,16 @@ import {
 } from 'react-native';
 import { Image } from 'expo-image';
 import { Ionicons } from '@expo/vector-icons';
-import LogoShakas from '../../assets/svg/logo_shakas.svg';
 
 const PLACEHOLDER_COLOR = '#B0B3B8';
 
 type Feedback = { type: 'error' | 'success'; message: string } | null;
 
-export default function LoginScreen() {
+type LoginScreenProps = {
+  onLoginSuccess?: () => void;
+};
+
+export default function LoginScreen({ onLoginSuccess }: LoginScreenProps) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
@@ -40,7 +43,8 @@ export default function LoginScreen() {
     setTimeout(() => {
       setLoading(false);
       setFeedback({ type: 'success', message: `¡Bienvenido ${username.trim()}!` });
-    }, 1000);
+      onLoginSuccess?.();
+    }, 600);
   };
 
   return (
@@ -64,12 +68,16 @@ export default function LoginScreen() {
         >
           {/* Logo */}
           <View className="mb-4 h-[170px] w-[230px]">
-            <LogoShakas width="100%" height="100%" />
+            <Image
+              source={require('../../assets/images/shakas-logo-removebg-preview.png')}
+              contentFit="contain"
+              style={{ width: '100%', height: '100%' }}
+            />
           </View>
 
           {/* Tarjeta de inicio de sesión */}
           <View className="w-full max-w-[390px] rounded-2xl border border-white/10 bg-shaka-card/95 px-7 py-8 shadow-2xl shadow-black">
-            <Text className="mb-6 text-center font-medieval text-[28px] tracking-wider text-white">
+            <Text className="mb-6 text-center font-rocker text-[28px] tracking-wider text-white">
               Iniciar Sesión
             </Text>
 
